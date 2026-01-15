@@ -16,7 +16,7 @@ I am an **Industrial Mathematics** graduate dedicated to humanizing complex data
 
 ## 📁 Featured Projects
 
-### 📊 [WordAlive Engagement Automation](link-to-folder-or-repo)
+### 📊 [WordAlive Engagement Automation](images/dashboard.png)
 **Tools:** Excel, Google Forms, Pivot Tables
 * Automated a manual tracking system for a 100+ member reading community.
 * Built a digital pipeline that transforms raw Google Form inputs into real-time engagement dashboards.
@@ -41,7 +41,7 @@ I believe that a researcher’s greatest tool is the ability to present findings
 
 ## 📫 Connect with me:
 * **LinkedIn:** [linkedin.com/in/emycodes](https://linkedin.com/in/emycodes)
-* **Role Interests:** Data Analyst, Business Analyst, Junior Data Scientist, Operations Research
+* **Role Interests:** Data Analyst, Business Analyst, Junior Data Scientist.
 
 ---
 *"Data is most powerful when it serves as a clear, honest bridge between raw numbers and strategic growth."*
