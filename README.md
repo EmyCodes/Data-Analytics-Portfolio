@@ -22,10 +22,12 @@ I am an **Industrial Mathematics** graduate dedicated to humanizing complex data
 * Built a digital pipeline that transforms raw Google Form inputs into real-time engagement dashboards.
 * **Key Insight:** Segmented users based on 50% and 60% submission rates to drive targeted community support.
 
-### 📉 [Optimization & Math Modeling](Coming-Soon)
-**Tools:** MATLAB / Excel Solver
-* Applying linear programming and optimization techniques to solve resource allocation problems.
-* *Coming soon: Exploring supply chain efficiency models.*
+### 📉 [Numerical Methods & Computational Modeling](Final-Year-Project/)
+**Tools:** Maple 
+**Final Year Project (FUTA, 2025):** *An Order Six Numerical Method for Direct Solution of General Second Order Ordinary Differential Equations.*
+* Developed and implemented a high-order numerical algorithm to solve general second-order ODEs directly without reduction to first-order systems.
+* Conducted error analysis and stability testing to ensure the method's accuracy and convergence properties.
+* **Key Skill:** Applied advanced mathematical theory to computational problems, demonstrating a deep understanding of algorithm efficiency and numerical precision.
 
 ### 🐍 [Python Data Exploration](Coming-Soon)
 **Tools:** Python (Jupyter Notebooks)
@@ -35,7 +37,7 @@ I am an **Industrial Mathematics** graduate dedicated to humanizing complex data
 ---
 
 ## 📈 My "Practice to Perfection" Journey
-I believe that a researcher’s greatest tool is the ability to present findings without bias. While I am constantly learning and refining my skills, I am committed to "learning in public." You can find my recent lessons on data integrity and process automation documented here and on my LinkedIn.
+I believe that a Data Analyst's greatest tool is the ability to present findings without bias. While I am constantly learning and refining my skills, I am committed to "learning in public." You can find my recent lessons on data integrity and process automation documented here and on my LinkedIn.
 
 ---
 
