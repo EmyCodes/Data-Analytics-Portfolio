@@ -1,6 +1,12 @@
 # 📉 An Order Six Numerical Method for Direct Solution of General Second Order ODEs
 **Industrial Mathematics Thesis | Federal University of Technology, Akure (FUTA)**
 
+## 📂 Documentation
+* **Full Thesis (PDF):** [Download MTS192584_OGUNDARE_THESIS.pdf](./Documentation/MTS192584_OGUNDARE_THESIS.pdf)
+* **Maple Source Code:** [View Scripts](./Scripts)
+
+---
+
 ## 📌 Project Overview
 This repository contains the full mathematical derivation and computational implementation of a **Sixth-Order Numerical Method** designed for the direct solution of general second-order Initial Value Problems (IVPs):
 $$y'' = f(x, y, y'), \quad y(x_0) = y_0, \quad y'(x_0) = y'_0$$
@@ -22,6 +28,7 @@ Developed as a final year project in the Department of Mathematical Sciences, FU
 We assume an approximate solution of the form:
 $$y(x) = \sum_{j=0}^{7} a_j x^j$$
 By collocating at $p=5$ points and interpolating at $q=3$ points, we construct the following matrix system $AX = B$:
+
 
 $$
 \begin{bmatrix}
@@ -51,22 +58,40 @@ $$y'_{n+4} = - \frac{149}{42}y_{n+2} + \frac{128}{21}y_{n+1} - \frac{107}{42}y_{
 ---
 
 ## 🧪 Numerical Results & Benchmarks
-The method was implemented in Maple to solve four specific benchmark problems:
 
-| Problem Type | ODE | Exact Solution | Abs Error ($x=1.0$) | Benchmark Source |
-| :--- | :--- | :--- | :--- | :--- |
-| **Linear** | $y''=y$ | $y=e^x$ | **2.5827e-10** | Olayemi (2015) |
-| **Non-Linear** | $y''=x(y')^2$ | $y=1 + \frac{1}{2}\log\left(\frac{2+x}{2-x}\right)$ | **4.4697e-02** | Omole (2023) |
-| **Stiff** | $y''=y'$ | $y=1-e^x$ | **4.0000e-10** | Kuboye (2021) |
-| **Oscillatory**| $y''+y=2\cos x$ | $y=\cos x + x\sin x$ | **3.6358e-04** | Adesanya (2011) |
+### Problem 1: Linear IVP ($y''=y$)
+* **Exact Solution:** $y(x) = e^x$
+* **Absolute Error:** 2.5827e-10
+* **Benchmark:** Outperforms **Olayemi (2015)**
+
+![Problem 1 Graph](./Images/problem1_graph.png)
+
+
+### Problem 2: Non-Linear IVP ($y''=x(y')^2$)
+* **Exact Solution:** $y(x) = 1 + \frac{1}{2}\log\left(\frac{2+x}{2-x}\right)$
+* **Absolute Error:** 4.4697e-02
+* **Benchmark:** Validated against **Omole (2023)**
+
+![Problem 2 Graph](./Images/problem2_graph.png)
+
+### Problem 3: Stiff IVP ($y''=y'$)
+* **Exact Solution:** $y(x) = 1-e^x$
+* **Absolute Error:** 4.0000e-10
+* **Benchmark:** Validated against **Kuboye (2021)**
+
+![Problem 3 Graph](./Images/problem3_graph.png)
+
+### Problem 4: Oscillatory IVP ($y''+y=2\cos x$)
+* **Exact Solution:** $y(x) = \cos x + x\sin x$
+* **Absolute Error:** 3.6358e-04
+* **Benchmark:** Validated against **Adesanya (2011)**
+
+![Problem 4 Graph](./Images/problem4_graph.png)
+
 
 ---
 
 ## 📁 Repository Structure
-* `/Documentation`: Contains the LaTeX source code and the final Thesis PDF.
-* `/Images`: Plots and graphs generated from numerical experiments.
-* `/MapleCodes`: `.txt` and `.mw` files for direct implementation of the solver.
-
 ```text
 ├── Documentation/
 │   └── MTS192584_OGUNDARE_THESIS.pdf  
@@ -76,11 +101,9 @@ The method was implemented in Maple to solve four specific benchmark problems:
 │   └── Maple_Calculations_2.mw  
 │   └── Maple_Calculations_3.mw  
 │   └── Maple_Calculations_4.mw  
-└── README.md 
-```
----
-
-## 🎓 Author
-**Ogundare, Olamide Emmanuel** *B.Tech Industrial Mathematics, FUTA (2025)* Supervisor: **Dr. F.O. Obarhua**
-
-**LinkedIn:** [emycodes](https://linkedin.com/in/emycodes)
+├── Images/
+│   └── problem1_graph.png              # Graphs
+│   └── problem2_graph.png  
+│   └── problem3_graph.png  
+│   └── problem4_graph.png  
+└── README.md
