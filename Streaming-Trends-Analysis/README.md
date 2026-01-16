@@ -45,6 +45,8 @@ netflix_df = pd.read_csv("netflix_data.csv")
 ```
 
 ```python
+import pandas as pd
+import matplotlib.pyplot as plt
 """Perform exploratory data analysis 
 on the netflix_data.csv data to understand more 
 about movies from the 1990s decade.
