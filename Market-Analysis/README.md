@@ -42,35 +42,72 @@ A multi-stage data pipeline was implemented to transform raw, "dirty" market dat
 The core of this project involved programmatic data cleaning using Python's `apply` and `lambda` functions to prepare the dataset for statistical analysis.
 
 ```python
-# Import necessary libraries
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Load the dataset
-apps = pd.read_csv('apps.csv')
+# Ensure the correct path to the CSV file is provided
+# Load workout.csv
+workout = pd.read_csv("data/workout.csv")
+print(workout.head())
 
-# List of characters to remove for numeric analysis
-chars_to_remove = ['+', ',', '$']
-cols_to_clean = ['Installs', 'Price']
+# Load workout_geo.csv
+workout_geo = pd.read_csv("data/workout_geo.csv")
+print(workout_geo.head())
 
-# Cleaning and Type Conversion Pipeline
-for col in cols_to_clean:
-    for char in chars_to_remove:
-        apps[col] = apps[col].apply(lambda x: x.replace(char, ''))
-    apps[col] = apps[col].astype(float)
+# Ensure the correct path to the CSV file is provided
+# Load workout.csv
+workout = pd.read_csv("data/workout.csv")
+# print(workout.head())
 
-# 1. Visualizing Category Distribution
-plt.figure(figsize=(10, 8))
-sns.countplot(y='Category', data=apps, order=apps['Category'].value_counts().index)
-plt.title('Market Concentration by Category')
+# Load workout_geo.csv
+workout_geo = pd.read_csv("data/workout_geo.csv")
+# print(workout_geo.head())
+
+# Check the columns of workout_geo to find the correct column name
+print(workout_geo.columns)
+
+# Assuming the correct column name is 'workout_years' based on the column names
+year_str = workout_geo[workout_geo['workout_2018_2023'] != 'NaN'].agg({'workout_2018_2023': 'mode'})
+print(year_str.head())
+
+# Find the peak for global 'workout' searches
+df_workout = pd.read_csv("data/workout.csv")
+
+plt.figure(figsize=(12, 6))
+plt.plot(df_workout["month"], df_workout["workout_worldwide"])
+plt.xticks(rotation=90)
 plt.show()
 
-# 2. Analyzing Ratings Distribution
-plt.figure(figsize=(8, 6))
-sns.histplot(apps['Rating'], bins=20, kde=True)
-plt.title('Distribution of User Ratings')
+year_str = "2020"
+
+# Find the most popular keywords for the current year and during covid
+df_keywords = pd.read_csv("data/three_keywords.csv")
+
+plt.figure(figsize=(12, 6))
+plt.plot(df_keywords["month"], df_keywords["home_workout_worldwide"], label="Home workout")
+plt.plot(df_keywords["month"], df_keywords["gym_workout_worldwide"], label="Gym workout")
+plt.plot(df_keywords["month"], df_keywords["home_gym_worldwide"], label="Home gym")
+plt.xticks(rotation=90)
+plt.legend()
 plt.show()
+
+peak_covid = "home workout"
+current = "gym workout"
+
+# Find the country with the highest interest for workouts
+df_workout_geo = pd.read_csv("data/workout_geo.csv", index_col = 0)
+print(df_workout_geo.loc["United States"])
+print(df_workout_geo.loc["Australia"])
+print(df_workout_geo.loc["Japan"])
+
+top_country = "United States"
+
+# Who has the highest interest in home workouts, Philippines or Malaysia?
+df_keywords_geo = pd.read_csv("data/three_keywords_geo.csv", index_col = 0)
+print(df_keywords_geo.loc["Philippines", :])
+print(df_keywords_geo.loc["Malaysia", :])
+
+home_workout_geo = "Philippines"
 ```
 ***Note:*** *This project demonstrates the application of Industrial Mathematics logic—precision and algorithmic structure—to solve modern business problems.*
 ## 📁 Repository Structure
