@@ -45,7 +45,7 @@ I am an **Industrial Mathematics** graduate dedicated to humanizing complex data
 ## 🖼️ Project Gallery
 | Community Automation | Numerical Analysis | Fitness Trend Analysis |
 | :---: | :---: | :---: |
-| ![Dashboard](WordAlive-Engagement-Automation/images/dashboard.png) | ![ODE Graph](Final-Year-Project/Images/problem1_graph.png) | ![Fitness Trends](Fitness-Trends-Analysis/Images/workout_peak.png) |
+| ![Dashboard](WordAlive-Engagement-Automation/images/dashboard.png) | ![ODE Graph](Final-Year-Project/Images/problem1_graph.png) | ![Fitness Trends](Fitness-Trends-Analysis/Images/category_distribution.png) |
 | *Excel Engagement Dashboard* | *Order 6 Convergence Plot* | *2020 Search Peak Visualization* |
 
 ---
