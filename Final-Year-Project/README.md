@@ -107,3 +107,7 @@ $$y'_{n+4} = - \frac{149}{42}y_{n+2} + \frac{128}{21}y_{n+1} - \frac{107}{42}y_{
 │   └── problem3_graph.png  
 │   └── problem4_graph.png  
 └── README.md
+```
+
+## 📫 Connect with me:
+* **LinkedIn:** [linkedin.com/in/emycodes](https://linkedin.com/in/emycodes)
