@@ -8,9 +8,9 @@ I am an **Industrial Mathematics** graduate dedicated to humanizing complex data
 ## 🛠️ Technical Toolkit
 * **Data Analysis:** Microsoft Excel (Advanced Functions & Queries), SQL (PostgreSQL/MySQL)
 * **Programming & Scripting:** Python (Pandas, NumPy, Matplotlib)
-* **Mathematical Software:** MATLAB, Maple
+* **Mathematical Software:** Maple, MATLAB
 * **Visualization:** Excel Dashboards, Power BI/Tableau (Coming soon)
-* **Workflow:** Process Automation, ETL Pipelines, Optimization Modeling
+* **Workflow:** Process Automation, ETL Pipelines, Numerical Analysis, Optimization Modeling
 
 ---
 
@@ -22,17 +22,29 @@ I am an **Industrial Mathematics** graduate dedicated to humanizing complex data
 * Built a digital pipeline that transforms raw Google Form inputs into real-time engagement dashboards.
 * **Key Insight:** Segmented users based on 50% and 60% submission rates to drive targeted community support.
 
+
+
 ### 📉 [Numerical Methods & Computational Modeling](Final-Year-Project/)
-**Tools:** Maple 
-**Final Year Project (FUTA, 2025):** *An Order Six Numerical Method for Direct Solution of General Second Order Ordinary Differential Equations.*
-* Developed and implemented a high-order numerical algorithm to solve general second-order ODEs directly without reduction to first-order systems.
-* Conducted error analysis and stability testing to ensure the method's accuracy and convergence properties.
-* **Key Skill:** Applied advanced mathematical theory to computational problems, demonstrating a deep understanding of algorithm efficiency and numerical precision.
+**Tools:** Maple, LaTeX
+**Thesis (FUTA, 2025):** *An Order Six Numerical Method for Direct Solution of General Second Order Ordinary Differential Equations.*
+* Developed a high-order (Order 6) numerical algorithm to solve general second-order ODEs directly, bypassing the need for reduction to first-order systems.
+* **Academic Benchmarking:** Validated the method's accuracy against established research by **Olayemi (2015)**, **Omole (2023)**, **Kuboye (2021)**, and **Adesanya (2011)**.
+* **Key Skill:** Applied advanced mathematical theory (Power Series, Collocation, and Stability Analysis) to achieve a high-precision error constant ($C_8 \approx -0.002116$).
+
+
 
 ### 🐍 [Python Data Exploration](Coming-Soon)
 **Tools:** Python (Jupyter Notebooks)
 * Focusing on cleaning and analyzing large-scale datasets using Pandas.
 * *Coming soon: Exploratory Data Analysis (EDA) on public financial datasets.*
+
+---
+
+## 🖼️ Project Gallery
+| Community Automation | Numerical Analysis |
+| :---: | :---: |
+| ![Dashboard](WordAlive-Engagement-Automation/Images/dashboard.png) | ![ODE Graph](Final-Year-Project/Images/problem1_graph.png) |
+| *Excel Engagement Dashboard* | *Convergence & Stability Plot* |
 
 ---
 
@@ -43,7 +55,7 @@ I believe that a Data Analyst's greatest tool is the ability to present findings
 
 ## 📫 Connect with me:
 * **LinkedIn:** [linkedin.com/in/emycodes](https://linkedin.com/in/emycodes)
-* **Role Interests:** Data Analyst, Business Analyst, Junior Data Scientist.
+* **Role Interests:** Data Analyst, Business Analyst, Junior Data Scientist, Operations Research.
 
 ---
 *"Data is most powerful when it serves as a clear, honest bridge between raw numbers and strategic growth."*
