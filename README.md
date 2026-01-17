@@ -1,4 +1,4 @@
-# Data Analytics & Mathematical Modeling Portfolio
+# Data Analytics Portfolio
 ### Hi, I'm EmyCodes 👋 
 
 I am an **Industrial Mathematics** graduate dedicated to humanizing complex datasets through transparency, integrity, and actionable storytelling. My work focuses on building the "bridge" between raw numbers and strategic growth.
