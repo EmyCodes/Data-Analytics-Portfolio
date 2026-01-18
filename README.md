@@ -1,63 +1,55 @@
 # Data Analytics Portfolio
 ### Hi, I'm EmyCodes 👋 
 
-I am an **Industrial Mathematics** graduate dedicated to humanizing complex datasets through transparency, integrity, and actionable storytelling. My work focuses on building the "bridge" between raw numbers and strategic growth.
+I am an **Industrial Mathematics** graduate specializing in Data Analytics and Process Automation. My work focuses on building efficient data pipelines and extracting technical insights from complex datasets to drive strategic growth.
 
 ---
 
 ## 🛠️ Technical Toolkit
-* **Data Analysis:** Microsoft Excel (Advanced Functions & Queries), SQL (PostgreSQL/MySQL)
-* **Programming & Scripting:** Python (Pandas, NumPy, Matplotlib, Seaborn)
-* **Mathematical Software:** Maple, MATLAB
-* **Visualization:** Excel Dashboards, Python Visualization (Time-Series, Heatmaps), Power BI/Tableau (Coming soon)
-* **Workflow:** Process Automation, ETL Pipelines, Numerical Analysis, Optimization Modeling
+* **Data Analysis:** Python (Pandas, NumPy), SQL (PostgreSQL/MySQL), Microsoft Excel (Advanced Functions & VBA)
+* **Visualization:** Matplotlib, Seaborn, Excel Dashboards, Power BI (Coming soon)
+* **Technical Workflow:** Time-Series Analysis, ETL Pipelines, Market Research, Exploratory Data Analysis (EDA), Process Automation
 
 ---
 
 ## 📁 Featured Projects
 
-### 📊 [WordAlive Engagement Automation](WordAlive-Engagement-Automation/)
-**Tools:** Excel, Google Forms, Pivot Tables
-* Automated a manual tracking system for a 100+ member reading community.
-* Built a digital pipeline that transforms raw Google Form inputs into real-time engagement dashboards.
-* **Key Insight:** Segmented users based on 50% and 60% submission rates to drive targeted community support.
-
-### 📉 [Numerical Methods & Computational Modeling](Final-Year-Project/)
-**Tools:** Maple, LaTeX
-**Thesis (FUTA, 2025):** *An Order Six Numerical Method for Direct Solution of General Second Order Ordinary Differential Equations.*
-* Developed a high-order (Order 6) numerical algorithm to solve general second-order ODEs directly, bypassing the need for reduction to first-order systems.
-* **Academic Benchmarking:** Validated the method's accuracy against established research by **Olayemi (2015)**, **Omole (2023)**, **Kuboye (2021)**, and **Adesanya (2011)**.
-* **Key Skill:** Applied advanced mathematical theory (Power Series, Collocation, and Stability Analysis) to achieve a high-precision error constant ($C_8 \approx -0.002116$).
-
 ### 🏋️‍♂️ [Global Fitness Market Analysis](Fitness-Trends-Analysis/)
 **Tools:** Python (Pandas, Matplotlib)
-* Analyzed global search interest trends from 2018–2023 to identify market shifts in the fitness industry.
-* **Technical Achievement:** Conducted multi-dataset merges and time-series analysis to isolate the 2020 "Home Workout" peak and identify the current resurgence of "Gym Workouts."
-* **Finding:** Identified the **United States** and **Philippines** as high-growth regions for specific equipment niches based on geographic search intensity.
+* Analyzed global search trends (2018–2023) to identify shifts in the fitness industry.
+* **Technical Achievement:** Performed multi-dataset merging and time-series segmentation to isolate the 2020 "Home Workout" surge and the current "Gym Workout" resurgence.
+* **Finding:** Identified the **United States** and **Philippines** as high-growth regions for specific fitness equipment niches.
 
-### 🎬 [Streaming Trends](Streaming-Trends-Analysis/)
-**Tools:** Python (Pandas, Matplotlib)
-* Performed Exploratory Data Analysis (EDA) on a dataset of 4,800+ titles to uncover entertainment industry patterns for a production company specializing in nostalgic styles.
-* **Finding:** Identified **94 minutes** as the most frequent movie duration of the 1990s, providing a quantitative pacing benchmark for new "nostalgic" content.
+### 📊 [WordAlive Engagement Automation](WordAlive-Engagement-Automation/)
+**Tools:** Excel, Google Forms, Pivot Tables, VBA
+* Automated a manual tracking system for a 100+ member community to eliminate data entry bottlenecks.
+* **Technical Achievement:** Built a digital pipeline transforming raw Google Form inputs into real-time analytical dashboards.
+* **Metric:** Segmented users by 50% and 60% submission rates to provide technical data for targeted retention strategies.
+
+### 🎬 [Streaming Trends Analysis](Streaming-Trends-Analysis/)
+**Tools:** Python (Pandas, Seaborn)
+* Executed an Exploratory Data Analysis (EDA) on a dataset of 4,800+ titles to uncover entertainment industry patterns.
+* **Technical Achievement:** Utilized boolean indexing and temporal segmentation to isolate 1990s content and identify outliers in genre distribution.
+* **Finding:** Quantified the most frequent movie duration of the 1990s as **94 minutes**, establishing a technical benchmark for content pacing.
 
 ---
 
 ## 🖼️ Project Gallery
-| Community Automation | Numerical Analysis | Fitness Trend Analysis |
+| Community Automation | Fitness Trend Analysis | Streaming Trends |
 | :---: | :---: | :---: |
-| ![Dashboard](WordAlive-Engagement-Automation/images/dashboard.png) | ![ODE Graph](Final-Year-Project/Images/problem1_graph.png) | ![Fitness Trends](Fitness-Trends-Analysis/Images/category_distribution.png) |
-| *Excel Engagement Dashboard* | *Order 6 Convergence Plot* | *2020 Search Peak Visualization* |
+| ![Dashboard](WordAlive-Engagement-Automation/images/dashboard.png) | ![Fitness Plot](Fitness-Trends-Analysis/Images/category_distribution.png) | ![Streaming Plot](Streaming-Trends-Analysis/Images/streaming_viz.png) |
+| *Excel Engagement Dashboard* | *2020 Search Peak Visualization* | *90s Duration Distribution* |
 
 ---
 
 ## 📈 My "Practice to Perfection" Journey
-I believe that a Data Analyst's greatest tool is the ability to present findings without bias. While I am constantly learning and refining my skills, I am committed to "learning in public." You can find my recent lessons on data integrity and process automation documented here and on my LinkedIn.
+I am a **3MTT Fellow** and **ForbesBLK Member** dedicated to technical excellence in Data Analytics. I focus on "learning in public" by documenting technical workflows, data integrity processes, and automation logic.
 
 ---
 
 ## 📫 Connect with me:
 * **LinkedIn:** [linkedin.com/in/emycodes](https://linkedin.com/in/emycodes)
-* **Role Interests:** Data Analyst, Business Analyst, Junior Data Scientist, Operations Research.
+* **Role Interests:** Data Analyst, Business Intelligence Analyst, Product Analyst, Operations Research.
 
 ---
 *"Data is most powerful when it serves as a clear, honest bridge between raw numbers and strategic growth."*
