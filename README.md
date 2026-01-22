@@ -20,16 +20,29 @@ I am an **Industrial Mathematics** graduate specializing in Data Analytics and P
 * **Technical Achievement:** Processed **92 responses** from **16 individuals** to build a comprehensive dashboard tracking engagement across **5 centers** in Osun State.
 * **Impact:** Identified the **University of Ilesa** as the engagement lead (48 submissions) and isolated low-performing centers for strategic leadership follow-up.
 
-### 📉 [Numerical Methods & Computational Modeling](Final-Year-Project/)
-**Tools:** Maple, LaTeX
-* Developed a high-order (Order 6) numerical algorithm to solve general second-order Ordinary Differential Equations (ODEs) directly.
-* **Academic Achievement:** Validated accuracy against established research (Olayemi, Omole, Kuboye) and achieved a high-precision error constant.
-* **Context:** This project represents the mathematical foundation of my analytical precision.
+### 🛠️ [WordAlive Tracker Testing](WordAlive-Tracker-Testing/)
+**Tools:** Excel, Google Forms, Excel Tables
+* Automated a manual tracking system for a 100+ member community to eliminate data entry bottlenecks.
+* **Technical Achievement:** Built a digital pipeline transforming raw Google Form inputs into real-time analytical dashboards.
+* **Metric:** Segmented users by 50% and 60% submission rates to provide technical data for targeted retention strategies.
 
 ### 🏋️‍♂️ [Global Fitness Market Analysis](Fitness-Trends-Analysis/)
 **Tools:** Python (Pandas, Matplotlib)
 * Analyzed global search trends (2018–2023) to identify shifts in the fitness industry.
 * **Technical Achievement:** Isolated the 2020 "Home Workout" surge and identified regional hotspots like the **United States** and **Philippines**.
+* **Finding:** Identified definitive peaks in digital fitness interest, providing a quantitative basis for market entry strategies.
+
+### 🎬 [Streaming Trends Analysis](Streaming-Trends-Analysis/)
+**Tools:** Python (Pandas, Seaborn)
+* Executed an Exploratory Data Analysis (EDA) on a dataset of 4,800+ titles to uncover entertainment industry patterns.
+* **Technical Achievement:** Utilized boolean indexing and temporal segmentation to isolate 1990s content and identify outliers in genre distribution.
+* **Finding:** Quantified the most frequent movie duration of the 1990s as **94 minutes**, establishing a technical benchmark for content pacing.
+
+### 📉 [Numerical Methods & Computational Modeling](Final-Year-Project/)
+**Tools:** Maple, LaTeX
+* Developed a high-order (Order 6) numerical algorithm to solve general second-order Ordinary Differential Equations (ODEs) directly.
+* **Academic Achievement:** Validated accuracy against established research (Olayemi, Omole, Kuboye) and achieved a high-precision error constant.
+* **Context:** This project represents the mathematical foundation of my analytical precision.
 
 ---
 
