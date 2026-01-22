@@ -6,7 +6,7 @@ I am an **Industrial Mathematics** graduate specializing in Data Analytics and P
 ---
 
 ## 🛠️ Technical Toolkit
-* **Data Analysis:** Python (Pandas, NumPy), SQL (PostgreSQL/MySQL), Microsoft Excel (Advanced Functions & VBA)
+* **Data Analysis:** Microsoft Excel (Advanced Functions & VBA), Python (Pandas, NumPy), SQL (PostgreSQL/MySQL)
 * **Visualization:** Microsoft Excel (Dashboards), Python (Matplotlib, Seaborn), Power BI (Coming soon)
 * **Technical Workflow:** ETL Pipelines, Process Automation, Time-Series Analysis, Market Research, Exploratory Data Analysis (EDA)
 
@@ -29,7 +29,7 @@ I am an **Industrial Mathematics** graduate specializing in Data Analytics and P
 ### 🏋️‍♂️ [Global Fitness Market Analysis](Fitness-Trends-Analysis/)
 **Tools:** Python (Pandas, Matplotlib)
 * Analyzed global search trends (2018–2023) to identify shifts in the fitness industry.
-* **Technical Achievement:** Isolated the 2020 "Home Workout" surge and identifying regional hotspots like the **United States** and **Philippines**.
+* **Technical Achievement:** Isolated the 2020 "Home Workout" surge and identified regional hotspots like the **United States** and **Philippines**.
 
 ---
 
