@@ -56,10 +56,10 @@ I am an **Industrial Mathematics** graduate specializing in Data Analytics and P
 ---
 
 ## 🖼️ Project Gallery
-| WPM DWR Dashboard | WordAlive Tracker | Final Year Project |
-| :---: | :---: | :---: |
-| ![WPM Dashboard](WPM-DWR-Automation-2025/images/dashboard_view.png) | ![WordAlive Dashboard](WordAlive-Tracker-Testing/images/dashboard.png) | ![ODE Graph](Final-Year-Project/Images/problem1_graph.png) |
-| *WPM Integrated Dashboard* | *Community Engagement Tracker* | *Numerical Convergence Plot* |
+| Stock Analysis | WPM DWR Dashboard | WordAlive Tracker | Final Year Project |
+| :---: | :---: | :---: | :---: |
+| ![Tesla Graph](Stock-Revenue-Analysis-Tesla_GameStop/images/tesla_graph.png) | ![WPM Dashboard](WPM-DWR-Automation-2025/images/dashboard_view.png) | ![WordAlive Dashboard](WordAlive-Tracker-Testing/images/dashboard.png) | ![ODE Graph](Final-Year-Project/Images/problem1_graph.png) |
+| *Python ETL & Data Harvesting* | *Automated Ministry Ecosystem* | *Community Engagement* | *Order 6 Numerical Convergence* |
 
 ---
 
