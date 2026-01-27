@@ -160,7 +160,7 @@ gme_revenue = gme_revenue[gme_revenue["Revenue"] != ""]
 ```py
 tesla_revenue.tail()
 ```
-<div>
+<!-- <div> -->
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -210,7 +210,7 @@ tesla_revenue.tail()
     </tr>
   </tbody>
 </table>
-</div>
+<!-- </div> -->
 
 ```py
 make_graph(tesla_data, tesla_revenue, "Tesla")
@@ -224,7 +224,7 @@ The dashboard shows a strong coupling between revenue growth and stock appreciat
 ```py
 gme_revenue.tail()
 ```
-<div>
+<!-- <div> -->
 <style scoped>
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
@@ -274,7 +274,7 @@ gme_revenue.tail()
     </tr>
   </tbody>
 </table>
-</div>
+<!-- </div> -->
 
 ```py
 make_graph(gme_data, gme_revenue, "GameStop")
