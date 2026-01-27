@@ -160,20 +160,7 @@ gme_revenue = gme_revenue[gme_revenue["Revenue"] != ""]
 ```py
 tesla_revenue.tail()
 ```
-<!-- <div> -->
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+<div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -210,7 +197,7 @@ tesla_revenue.tail()
     </tr>
   </tbody>
 </table>
-<!-- </div> -->
+</div>
 
 ```py
 make_graph(tesla_data, tesla_revenue, "Tesla")
@@ -224,20 +211,7 @@ The dashboard shows a strong coupling between revenue growth and stock appreciat
 ```py
 gme_revenue.tail()
 ```
-<!-- <div> -->
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
+<div>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -274,7 +248,7 @@ gme_revenue.tail()
     </tr>
   </tbody>
 </table>
-<!-- </div> -->
+</div>
 
 ```py
 make_graph(gme_data, gme_revenue, "GameStop")
