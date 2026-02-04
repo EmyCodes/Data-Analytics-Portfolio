@@ -1,4 +1,4 @@
-# 📉 An Order Six Numerical Method for Direct Solution of General Second Order ODEs
+# An Order Six Numerical Method for Direct Solution of General Second Order ODEs
 **Industrial Mathematics Thesis | Federal University of Technology, Akure (FUTA)**
 
 ## 📂 Documentation
@@ -22,7 +22,7 @@ Developed as a final year project in the Department of Mathematical Sciences, FU
 
 ---
 
-## 🧮 Mathematical Methodology
+## Mathematical Methodology
 
 ### 1. The Basis Function
 We assume an approximate solution of the form:
@@ -48,7 +48,7 @@ $$y'_{n+4} = - \frac{149}{42}y_{n+2} + \frac{128}{21}y_{n+1} - \frac{107}{42}y_{
 
 ---
 
-## 📊 Analysis of Basic Properties
+## Analysis of Basic Properties
 * **Order ($p$):** 6
 * **Error Constant ($C_8$):** $-\frac{2}{945} \approx -0.002116$
 * **Consistency:** The method is proven consistent as $p \geq 1$ and it satisfies $\rho(1)=\rho'(1)=0$ and $\rho''(1) = 2\sigma(1)$.
@@ -57,7 +57,7 @@ $$y'_{n+4} = - \frac{149}{42}y_{n+2} + \frac{128}{21}y_{n+1} - \frac{107}{42}y_{
 
 ---
 
-## 🧪 Numerical Results & Benchmarks
+## Numerical Results & Benchmarks
 
 ### Problem 1: Linear IVP ($y''=y$)
 * **Exact Solution:** $y(x) = e^x$
