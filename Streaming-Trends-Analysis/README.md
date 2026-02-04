@@ -1,4 +1,4 @@
-# 🎬 Exploring Streaming Trends of the 1990s
+# Exploring Streaming Trends of the 1990s
 **Technical Research Case Study | Python Data Exploration**
 
 ## 📌 Project Objective
@@ -81,4 +81,9 @@ print(f"Number of Short Action Movies (1990s): {short_movie_count}")
 ---
 *This project is part of my "Practice to Perfection" journey. I am currently expanding this portfolio to include SQL and Python projects.*
 
+
 **Connect with me:** [LinkedIn](https://linkedIn.com/in/emycodes)
+
+---
+
+©️ **EmyCodes | 2026**
