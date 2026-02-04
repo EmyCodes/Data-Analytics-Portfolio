@@ -110,7 +110,20 @@ Using magic commands to connect to the SQLite database with prefixed code, '%%sq
 SELECT COUNT(*)
 FROM CHICAGO_CRIME_DATA;
 ```
-**Result**: 533 crimes recorded in the dataset.
+<table>
+    <thead>
+        <tr>
+            <th>COUNT(*)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>533</td>
+        </tr>
+    </tbody>
+</table>
+
+**Interpretation**: There were 533 crime records in the dataset.
 
 ### Problem 2: Communities with per capita income < 11,000
 ```sql
@@ -119,7 +132,40 @@ SELECT COMMUNITY_AREA_NAME, COMMUNITY_AREA_NUMBER, PER_CAPITA_INCOME
 FROM CENSUS_DATA
 WHERE PER_CAPITA_INCOME < 11000;
 ```
-**Result**: West Garfield Park, South Lawndale, Fuller Park, Riverdale
+<table>
+    <thead>
+        <tr>
+            <th>COMMUNITY_AREA_NAME</th>
+            <th>COMMUNITY_AREA_NUMBER</th>
+            <th>PER_CAPITA_INCOME</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>West Garfield Park</td>
+            <td>26.0</td>
+            <td>10934</td>
+        </tr>
+        <tr>
+            <td>South Lawndale</td>
+            <td>30.0</td>
+            <td>10402</td>
+        </tr>
+        <tr>
+            <td>Fuller Park</td>
+            <td>37.0</td>
+            <td>10432</td>
+        </tr>
+        <tr>
+            <td>Riverdale</td>
+            <td>54.0</td>
+            <td>8201</td>
+        </tr>
+    </tbody>
+</table>
+
+**Interpretation**: West Garfield Park, South Lawndale, Fuller Park, and Riverdale have per capita incomes below $11,000, indicating significant economic challenges in these communities.
+
 
 ### Problem 3: Crimes involving minors
 ```sql
@@ -128,4 +174,300 @@ SELECT CASE_NUMBER, DESCRIPTION
 FROM CHICAGO_CRIME_DATA
 WHERE DESCRIPTION LIKE '%MINOR%';
 ```
-**Result**: Cases related to illegal alcohol provision / consumption by minors
+<table>
+    <thead>
+        <tr>
+            <th>CASE_NUMBER</th>
+            <th>DESCRIPTION</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HL266884</td>
+            <td>SELL/GIVE/DEL LIQUOR TO MINOR</td>
+        </tr>
+        <tr>
+            <td>HK238408</td>
+            <td>ILLEGAL CONSUMPTION BY MINOR</td>
+        </tr>
+    </tbody>
+</table>
+
+**Interpretation**: Two crimes involving minors; one related to selling/giving liquor to a minor and another related to illegal consumption by a minor.
+
+### Problem 4: Kidnapping crimes involving a child
+```sql
+%%sql
+SELECT CASE_NUMBER, PRIMARY_TYPE, DESCRIPTION
+FROM CHICAGO_CRIME_DATA
+WHERE PRIMARY_TYPE = 'KIDNAPPING'
+  AND DESCRIPTION LIKE '%CHILD%';
+```
+<table>
+    <thead>
+        <tr>
+            <th>CASE_NUMBER</th>
+            <th>PRIMARY_TYPE</th>
+            <th>DESCRIPTION</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HN144152</td>
+            <td>KIDNAPPING</td>
+            <td>CHILD ABDUCTION/STRANGER</td>
+        </tr>
+    </tbody>
+</table>
+
+**Interpretation**: One kidnapping case involving a child, specifically a child abduction by a stranger.
+
+### Problem 5: Crimes recorded at schools (distinct types)
+```sql
+%%sql
+SELECT DISTINCT PRIMARY_TYPE, DESCRIPTION, LOCATION_DESCRIPTION
+FROM CHICAGO_CRIME_DATA
+WHERE LOCATION_DESCRIPTION LIKE '%SCHOOL%';
+```
+<table>
+    <thead>
+        <tr>
+            <th>CASE_NUMBER</th>
+            <th>PRIMARY_TYPE</th>
+            <th>DESCRIPTION</th>
+            <th>LOCATION_DESCRIPTION</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>HL353697</td>
+            <td>BATTERY</td>
+            <td>SIMPLE</td>
+            <td>SCHOOL, PUBLIC, GROUNDS</td>
+        </tr>
+        <tr>
+            <td>HL725506</td>
+            <td>BATTERY</td>
+            <td>PRO EMP HANDS NO/MIN INJURY</td>
+            <td>SCHOOL, PUBLIC, BUILDING</td>
+        </tr>
+        <tr>
+            <td>HP716225</td>
+            <td>BATTERY</td>
+            <td>SIMPLE</td>
+            <td>SCHOOL, PUBLIC, BUILDING</td>
+        </tr>
+        <tr>
+            <td>HH639427</td>
+            <td>BATTERY</td>
+            <td>SIMPLE</td>
+            <td>SCHOOL, PUBLIC, BUILDING</td>
+        </tr>
+        <tr>
+            <td>JA460432</td>
+            <td>BATTERY</td>
+            <td>SIMPLE</td>
+            <td>SCHOOL, PUBLIC, GROUNDS</td>
+        </tr>
+        <tr>
+            <td>HS200939</td>
+            <td>CRIMINAL DAMAGE</td>
+            <td>TO VEHICLE</td>
+            <td>SCHOOL, PUBLIC, GROUNDS</td>
+        </tr>
+        <tr>
+            <td>HK577020</td>
+            <td>NARCOTICS</td>
+            <td>POSS: HEROIN(WHITE)</td>
+            <td>SCHOOL, PUBLIC, GROUNDS</td>
+        </tr>
+        <tr>
+            <td>HS305355</td>
+            <td>NARCOTICS</td>
+            <td>MANU/DEL:CANNABIS 10GM OR LESS</td>
+            <td>SCHOOL, PUBLIC, BUILDING</td>
+        </tr>
+        <tr>
+            <td>HT315369</td>
+            <td>ASSAULT</td>
+            <td>PRO EMP HANDS NO/MIN INJURY</td>
+            <td>SCHOOL, PUBLIC, GROUNDS</td>
+        </tr>
+        <tr>
+            <td>HR585012</td>
+            <td>CRIMINAL TRESPASS</td>
+            <td>TO LAND</td>
+            <td>SCHOOL, PUBLIC, GROUNDS</td>
+        </tr>
+        <tr>
+            <td>HH292682</td>
+            <td>PUBLIC PEACE VIOLATION</td>
+            <td>BOMB THREAT</td>
+            <td>SCHOOL, PRIVATE, BUILDING</td>
+        </tr>
+        <tr>
+            <td>G635735</td>
+            <td>PUBLIC PEACE VIOLATION</td>
+            <td>BOMB THREAT</td>
+            <td>SCHOOL, PUBLIC, BUILDING</td>
+        </tr>
+    </tbody>
+</table>
+
+**Interpretation**: Crimes at schools include various types of battery, criminal damage, narcotics offenses, assault, trespassing, and bomb threats. Both public and private school grounds/buildings are affected.
+
+
+### Problem 6: Average safety score by school type
+```sql
+%%sql
+SELECT `Elementary, Middle, or High School`, AVG(SAFETY_SCORE)
+FROM CHICAGO_PUBLIC_SCHOOLS
+GROUP BY `Elementary, Middle, or High School`;
+```
+<table>
+    <thead>
+        <tr>
+            <th>Elementary, Middle, or High School</th>
+            <th>AVG(SAFETY_SCORE)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>ES</td>
+            <td>49.52038369304557</td>
+        </tr>
+        <tr>
+            <td>HS</td>
+            <td>49.62352941176471</td>
+        </tr>
+        <tr>
+            <td>MS</td>
+            <td>48.0</td>
+        </tr>
+    </tbody>
+</table>
+
+**Interpretation**: High schools have a slightly higher average safety score compared to elementary and middle schools, but the differences are minimal.
+
+### Problem 7: Top 5 communities by % households below poverty
+```sql
+%%sql
+SELECT COMMUNITY_AREA_NAME, PERCENT_HOUSEHOLDS_BELOW_POVERTY
+FROM CENSUS_DATA
+ORDER BY PERCENT_HOUSEHOLDS_BELOW_POVERTY DESC
+LIMIT 5;
+```
+<table>
+    <thead>
+        <tr>
+            <th>COMMUNITY_AREA_NAME</th>
+            <th>PERCENT_HOUSEHOLDS_BELOW_POVERTY</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Riverdale</td>
+            <td>56.5</td>
+        </tr>
+        <tr>
+            <td>Fuller Park</td>
+            <td>51.2</td>
+        </tr>
+        <tr>
+            <td>Englewood</td>
+            <td>46.6</td>
+        </tr>
+        <tr>
+            <td>North Lawndale</td>
+            <td>43.1</td>
+        </tr>
+        <tr>
+            <td>East Garfield Park</td>
+            <td>42.4</td>
+        </tr>
+    </tbody>
+</table>
+
+**Interpretation**: Riverdale, Fuller Park, Englewood, North Lawndale, East Garfield Park have the highest poverty rates.
+
+### Problem 8: Community area number with most crimes
+```sql
+%%sql
+SELECT COMMUNITY_AREA_NUMBER
+FROM (
+    SELECT COMMUNITY_AREA_NUMBER, COUNT(*) AS CNT
+    FROM CHICAGO_CRIME_DATA
+    GROUP BY COMMUNITY_AREA_NUMBER
+    ORDER BY CNT DESC
+)
+LIMIT 1;
+```
+<table>
+    <thead>
+        <tr>
+            <th>COMMUNITY_AREA_NUMBER</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>25.0</td>
+        </tr>
+    </tbody>
+</table>
+
+**Interpretation**: Community area number 25.0 has the highest number of recorded crimes in the dataset.
+
+### Problem 9: Community with highest hardship index
+```sql
+%%sql
+SELECT COMMUNITY_AREA_NAME
+FROM CENSUS_DATA
+WHERE HARDSHIP_INDEX = (
+    SELECT MAX(HARDSHIP_INDEX)
+    FROM CENSUS_DATA
+);
+```
+<table>
+    <thead>
+        <tr>
+            <th>COMMUNITY_AREA_NAME</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Riverdale</td>
+        </tr>
+    </tbody>
+</table>
+
+**Interpretation**: Riverdale has the highest hardship index, indicating it faces significant socioeconomic challenges.
+
+### Problem 10: Community name with the most crimes
+```sql
+%%sql
+SELECT COMMUNITY_AREA_NAME
+FROM CENSUS_DATA C
+JOIN (
+    SELECT COMMUNITY_AREA_NUMBER, COUNT(*) AS CRIME_COUNT
+    FROM CHICAGO_CRIME_DATA
+    GROUP BY COMMUNITY_AREA_NUMBER
+) D
+ON C.COMMUNITY_AREA_NUMBER = D.COMMUNITY_AREA_NUMBER
+ORDER BY CRIME_COUNT DESC
+LIMIT 1;
+```
+
+<table>
+    <thead>
+        <tr>
+            <th>COMMUNITY_AREA_NAME</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Austin</td>
+        </tr>
+    </tbody>
+</table>
+
+**Interpretation**: Austin is the community area with the most recorded crimes in the dataset.
