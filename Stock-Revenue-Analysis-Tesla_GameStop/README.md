@@ -1,4 +1,4 @@
-# 📈 Stock vs. Revenue: Automated Data Extraction & Visualization
+# Stock vs. Revenue: Automated Data Extraction & Visualization
 
 ## 📌 Project Overview
 This project was completed as the **final assignment for the IBM Python Project for Data Science**. It represents a deliberate shift from **theoretical mathematics to practical data engineering**, focusing on how raw financial data can be harvested, transformed, and translated into insight.
@@ -43,7 +43,7 @@ This produced synchronized datasets suitable for comparative visualization.
 
 ---
 
-## 💻 Full Python Implementation
+## Full Python Implementation
 
 ### Setup & Custom Dashboard Function: 
 ### 1. Installed required Libraries
