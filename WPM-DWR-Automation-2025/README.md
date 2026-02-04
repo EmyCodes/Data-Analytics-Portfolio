@@ -1,11 +1,11 @@
-# 📊 WordPoint Ministries: Digitized Workers Report (DWR) & Engagement Dashboard
+# WordPoint Ministries: Digitized Workers Report (DWR) & Engagement Dashboard
 
 ## 📌 Project Overview
 The Evolution of Impact: From Building Pipelines to Visualizing Insights.
 
 This project represents a full-cycle data solution—transitioning from a manual monitoring system developed during my Industrial Training (IT) to a modern, visual analytical dashboard. By revisiting a dataset of **92 responses** from **16 individuals** across **5 centers** in Osun State, I transformed "raw noise" from my original DWR system into a strategic roadmap for leadership.
 
-## 🚀 The Journey: From IT to Data Viz
+## The Journey: From IT to Data Viz
 During my industrial training, I pivoted from theoretical mathematics to practical data solutions by developing the **Digitized Workers Report (DWR)** system. What began as a journey from manual tracking to a digital ecosystem has now evolved. Fresh from completing the *Data Visualization with Excel and Cognos* course, I revisited this dataset to see what stories the numbers were truly telling.
 
 ## 🛠️ Technical Stack
