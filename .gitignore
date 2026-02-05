@@ -40,4 +40,5 @@ Thumbs.db
 *.rar
 *.7z
 .*
-.ipynb
+*project.ipynb
+*project.md
