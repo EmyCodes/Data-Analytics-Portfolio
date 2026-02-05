@@ -75,12 +75,17 @@ Official Chicago open datasets (subset versions prepared for SQL analysis):
 | YEAR                    | Year                     |
 | COMMUNITY_AREA_NUMBER   | Community location       |
 
-## 🔄 Data Loading (Python ETL)
+## 🔄 Setup & Data Loading (Python ETL)
+
+1. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Run the following in a Jupyter Notebook (or Python script):
 
 ```python
-!pip install pandas
-!pip install ipython-sql prettytable
-
 import pandas as pd
 import sqlite3
 import prettytable
@@ -98,9 +103,9 @@ df.to_sql("CHICAGO_PUBLIC_SCHOOLS", con, if_exists='replace', index=False, metho
 df = pd.read_csv("ChicagoCrimeData.csv")
 df.to_sql("CHICAGO_CRIME_DATA", con, if_exists='replace', index=False, method="multi")
 ```
-## 🔍 SQL Analysis (Jupyter Notebook)
+## SQL Analysis (Jupyter Notebook)
 Using magic commands to connect to the SQLite database with prefixed code, '%%sql' for cell magic and '%sql' for line magic as shown below:
-```python 
+```python
 %load_ext sql
 %sql sqlite:///FinalDB.db
 ```
@@ -494,7 +499,7 @@ This is how civic data becomes evidence.
 
 ## 📫 Connect with me:
 * **LinkedIn:** [linkedin.com/in/emycodes](https://linkedin.com/in/emycodes)
-* **Role Interests:** Data Analyst, Business Intelligence Analyst, Product Analyst, Operations Research.
+* **Role Interests:** Data Analyst, Business Intelligence Analyst, Product Analyst.
 
 ---
 *"Data is most powerful when it serves as a clear, honest bridge between raw numbers and strategic growth."*
