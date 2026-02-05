@@ -21,6 +21,9 @@ Developed as a final year project in the Department of Mathematical Sciences, FU
 * **Mathematical Theory:** Collocation & Interpolation, Linear Multistep Methods (LMM).
 
 ---
+#### Find the full project [here](./Documentation/MTS192584_OGUNDARE_THESIS.pdf) and Maple scripts [here](./Scripts)    
+
+---
 
 ## Mathematical Methodology
 
@@ -87,7 +90,6 @@ $$y'_{n+4} = - \frac{149}{42}y_{n+2} + \frac{128}{21}y_{n+1} - \frac{107}{42}y_{
 * **Benchmark:** Validated against **Adesanya (2011)**
 
 ![Problem 4 Graph](./Images/problem4_graph.png)
-
 
 ---
 
