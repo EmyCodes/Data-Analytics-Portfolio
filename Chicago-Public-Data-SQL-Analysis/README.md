@@ -1,8 +1,10 @@
 # Chicago Public Data SQL Analysis 
   
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
-[![Python Version](https://img.shields.io/badge/Python-3.7%2B-blue.svg)](https://www.python.org/downloads/release/python-370/)  
-[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
+[//]: # ([![License: MIT]&#40;https://img.shields.io/badge/License-MIT-yellow.svg&#41;]&#40;https://opensource.org/licenses/MIT&#41;  )
+
+[//]: # ([![Python Version]&#40;https://img.shields.io/badge/Python-3.7%2B-blue.svg&#41;]&#40;https://www.python.org/downloads/release/python-370/&#41;  )
+
+[//]: # ([![Jupyter Notebook]&#40;https://img.shields.io/badge/Jupyter-Notebook-orange.svg&#41;]&#40;https://jupyter.org/&#41;)
 
 ## 📌 Project Overview
 
